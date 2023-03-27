@@ -1,0 +1,86 @@
+
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 90%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+    }
+
+    :root {
+    --swiper-theme-color: #A34E00;
+    }
+
+
+    .mySwiper2 {
+      height: 10%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper2 swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper2 .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" mousewheel="true" keyboard="true" direction="vertical" thumbs-swiper=".mySwiper2">
+    <swiper-slide><img src="https://cdnb.artstation.com/p/assets/images/images/050/911/599/large/santiago-tomassi-kask1-162.jpg?1655989207"></swiper-slide>
+    <swiper-slide><img src="https://cdnb.artstation.com/p/assets/images/images/050/911/599/large/santiago-tomassi-kask1-162.jpg?1655989207"></swiper-slide>
+    <swiper-slide><img src="https://cdnb.artstation.com/p/assets/images/images/050/911/599/large/santiago-tomassi-kask1-162.jpg?1655989207"></swiper-slide>
+  </swiper-container>
+  <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true"
+      watch-slides-progress="true">
+      <swiper-slide><img src="https://cdnb.artstation.com/p/assets/images/images/050/911/599/large/santiago-tomassi-kask1-162.jpg?1655989207"></swiper-slide>
+      <swiper-slide><img src="https://cdnb.artstation.com/p/assets/images/images/050/911/599/large/santiago-tomassi-kask1-162.jpg?1655989207"></swiper-slide>
+      <swiper-slide><img src="https://cdnb.artstation.com/p/assets/images/images/050/911/599/large/santiago-tomassi-kask1-162.jpg?1655989207"></swiper-slide>
+  </swiper-container>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+
+
+</body>
