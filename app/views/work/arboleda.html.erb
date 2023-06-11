@@ -1,0 +1,66 @@
+<style>
+  html, body {
+    position: var(--position-relative);
+    height: var(--height-100);
+  }
+  body {
+    background: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-14);
+    color: var(--color-black);
+    margin: var(--margin-0);
+    padding: var(--padding-0);
+  }
+  swiper-container {
+    width: var(--swiper-container-width);
+    height: var(--swiper-container-height);
+  }
+  swiper-slide {
+    text-align: var(--text-align-center);
+    font-size: var(--font-size-18);
+    background: var(--background-color-black);
+    display: var(--display-flex);
+    justify-content: var(--justify-content-center);
+    align-items: var(--align-items-center);
+  }
+  swiper-slide img {
+    display: var(--display-block);
+    width: auto;
+    height: auto;
+    object-fit: var(--object-fit-cover);
+  }
+  swiper-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .mySwiper2 {
+    height: var(--mySwiper2-height);
+    box-sizing: var(--box-sizing-border-box);
+    padding: var(--padding-10) 0;
+  }
+  .mySwiper2 swiper-slide {
+    width: var(--width-25);
+    height: var(--height-100);
+    opacity: var(--opacity-04);
+  }
+  .mySwiper2 .swiper-slide-thumb-active {
+    opacity: var(--opacity-1);
+  }
+</style>
+
+<body>
+  <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" mousewheel="true" keyboard="true" direction="vertical" thumbs-swiper=".mySwiper2">
+    <swiper-slide><img src="https://cdnb.artstation.com/p/assets/images/images/057/680/969/large/santiago-tomassi-19fe629c-2783-46c1-94b3-e5201fdd5e70.jpg?1672341394"></swiper-slide>
+    <swiper-slide>
+      <video src="https://cdn.artstation.com/p/video_sources/001/053/837/headsand0000.mp4" type="video/mp4" controls loop muted autoplay>
+        Your browser does not support the video tag.
+      </video>
+    </swiper-slide>
+  </swiper-container>
+  <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true"
+      watch-slides-progress="true">
+      <swiper-slide><img src="https://cdnb.artstation.com/p/assets/images/images/057/680/969/large/santiago-tomassi-19fe629c-2783-46c1-94b3-e5201fdd5e70.jpg?1672341394"></swiper-slide>
+  </swiper-container>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>

@@ -1,3 +1,33 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+:root {
+  --position-relative: relative;
+  --height-100: 100%;
+  --background-color: #000000;
+  --font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-size-14: 14px;
+  --color-black: #000000;
+  --margin-0: 0;
+  --padding-0: 0;
+  --swiper-container-width: 100%;
+  --swiper-container-height: 90%;
+  --text-align-center: center;
+  --font-size-18: 18px;
+  --background-color-black: #000000;
+  --display-flex: flex;
+  --justify-content-center: center;
+  --align-items-center: center;
+  --display-block: block;
+  --object-fit-cover: cover;
+  --swiper-theme-color: #A34E00;
+  --mySwiper2-height: 10%;
+  --box-sizing-border-box: border-box;
+  --padding-10: 10px;
+  --width-25: 25%;
+  --opacity-04: 0.4;
+  --opacity-1: 1;
+}
+
 @import "bootstrap/css/bootstrap";
 @font-face {
 	font-family: 'Regular';
